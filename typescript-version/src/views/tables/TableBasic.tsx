@@ -25,7 +25,7 @@ const TableBasic = () => {
       <Table sx={{ minWidth: 650 }} aria-label='simple table'>
         <TableHead>
           <TableRow>
-            <TableCell>Dessert (100g serving)</TableCell>
+            <TableCell>Desserts (100g serving)</TableCell>
             <TableCell align='right'>Calories</TableCell>
             <TableCell align='right'>Fat (g)</TableCell>
             <TableCell align='right'>Carbs (g)</TableCell>
