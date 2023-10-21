@@ -53,15 +53,13 @@ const UserLayout = ({ children }: Props) => {
     )
   }
 
-  return ''
-
   return (
     <VerticalLayout
       hidden={hidden}
       settings={settings}
       saveSettings={saveSettings}
       verticalNavItems={VerticalNavItems()} // Navigation Items
-      afterVerticalNavMenuContent={UpgradeToProImg} //해당 주석 풀면 Upgrade
+      // afterVerticalNavMenuContent={UpgradeToProImg} //해당 주석 풀면 Upgrade
       verticalAppBarContent={(
         props // AppBar Content
       ) => (
