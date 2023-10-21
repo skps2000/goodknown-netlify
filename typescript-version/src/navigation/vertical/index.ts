@@ -12,27 +12,91 @@ import GoogleCirclesExtended from 'mdi-material-ui/GoogleCirclesExtended'
 
 // ** Type import
 import { VerticalNavItemsType } from 'src/@core/layouts/types'
+import { BulletinBoard, CardMultiple, Cash100, Gamepad, Logout, Store } from 'mdi-material-ui'
 
 const navigation = (): VerticalNavItemsType => {
   return [
     {
-      title: 'Dashboard',
+      sectionTitle: 'Apps'
+    },
+    {
+      title: '대시보드',
+
+      // title: 'Dashboard',
       icon: HomeOutline,
       path: '/'
     },
     {
-      title: 'Account Settings',
-      icon: AccountCogOutline,
-      path: '/account-settings'
+      title: '핫딜 알림',
+
+      // title: 'Hot Deals Alimi',
+      icon: Store,
+      path: '/cards'
     },
     {
-      sectionTitle: 'Pages'
+      title: 'LOL 알림',
+
+      // title: 'LOL Alimi',
+      icon: Gamepad,
+      path: '/cards'
+    },
+    {
+      title: '로또 알림',
+
+      // title: 'Lottery',
+      icon: Cash100,
+      path: '/cards'
+    },
+    {
+      title: 'Icons',
+      path: '/icons',
+      icon: GoogleCirclesExtended
+    },
+    {
+      sectionTitle: 'subscription'
+    },
+    {
+      title: '내 구독',
+      icon: CardMultiple,
+      path: '/cards'
+    },
+    {
+      sectionTitle: 'BBS'
+    },
+    {
+      title: '자유게시판',
+      icon: BulletinBoard,
+      path: '/tables'
+    },
+    {
+      title: '국내핫딜',
+      icon: BulletinBoard,
+      path: '/tables'
+    },
+    {
+      title: '해외핫딜',
+      icon: BulletinBoard,
+      path: '/tables'
+    },
+    {
+      sectionTitle: 'Account'
     },
     {
       title: 'Login',
       icon: Login,
       path: '/pages/login',
       openInNewTab: true
+    },
+    {
+      title: 'Logout',
+      icon: Logout,
+      path: '/pages/login',
+      openInNewTab: true
+    },
+    {
+      title: 'Account',
+      icon: AccountCogOutline,
+      path: '/account-settings'
     },
     {
       title: 'Register',

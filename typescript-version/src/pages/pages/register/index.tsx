@@ -157,12 +157,12 @@ const RegisterPage = () => {
                 fontSize: '1.5rem !important'
               }}
             >
-              {themeConfig.templateName}
+              {/* {themeConfig.templateName} */}
             </Typography>
           </Box>
           <Box sx={{ mb: 6 }}>
             <Typography variant='h5' sx={{ fontWeight: 600, marginBottom: 1.5 }}>
-              Adventure starts here 🚀
+              {/* Adventure starts here 🚀 */}
             </Typography>
             <Typography variant='body2'>Make your app management easy and fun!</Typography>
           </Box>

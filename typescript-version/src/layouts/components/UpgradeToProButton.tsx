@@ -31,6 +31,9 @@ const BuyNowButton = () => {
     setOpen(false)
   }
 
+  return ''
+
+  //광고버튼 20231021, 우측하단 광고버튼 활용시
   return (
     <Box
       className='upgrade-to-pro-button mui-fixed'
@@ -53,7 +56,8 @@ const BuyNowButton = () => {
           }
         }}
       >
-        Upgrade To Pro
+        {/* Upgrade To Pro */}
+        광고영역
       </Button>
       <Fade in={open} timeout={700}>
         <Box

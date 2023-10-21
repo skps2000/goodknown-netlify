@@ -18,9 +18,17 @@ const navigation = () => {
       path: '/'
     },
     {
-      title: 'Account Settings',
+      title: 'Account',
       icon: AccountCogOutline,
       path: '/account-settings'
+    },
+    {
+      sectionTitle: 'Pages'
+    },
+    {
+      title: 'Typography',
+      icon: FormatLetterCase,
+      path: '/typography'
     },
     {
       sectionTitle: 'Pages'
