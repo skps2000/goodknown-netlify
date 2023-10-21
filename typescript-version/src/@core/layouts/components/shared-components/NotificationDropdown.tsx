@@ -205,7 +205,7 @@ const NotificationDropdown = () => {
           disableRipple
           sx={{ py: 3.5, borderBottom: 0, borderTop: theme => `1px solid ${theme.palette.divider}` }}
         >
-          <Button fullWidth variant='contained' onClick={handleDropdownClose} disabled='true'>
+          <Button disabled fullWidth variant='contained' onClick={handleDropdownClose}>
             Read All Notifications
           </Button>
         </MenuItem>
