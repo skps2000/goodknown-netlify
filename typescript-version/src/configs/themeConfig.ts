@@ -20,7 +20,7 @@ const themeConfig: ThemeConfig = {
   // ** Layout Configs
   templateName: 'Materio' /* App Name */,
   TopName: 'Good Known',
-  mode: 'dark' /* light | dark */,
+  mode: 'light' /* light | dark */,
   contentWidth: 'boxed' /* full | boxed */,
 
   // ** Routing Configs

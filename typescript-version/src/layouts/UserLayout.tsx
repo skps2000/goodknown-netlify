@@ -1,6 +1,3 @@
-
-// [[INDEX.HTML]]
-
 // ** React Imports
 import { ReactNode } from 'react'
 
@@ -28,18 +25,43 @@ interface Props {
 }
 
 const UserLayout = ({ children }: Props) => {
-
+  // ** Hooks
   const { settings, saveSettings } = useSettings()
+
+  /**
+   *  The below variable will hide the current layout menu at given screen size.
+   *  The menu will be accessible from the Hamburger icon only (Vertical Overlay Menu).
+   *  You can change the screen size from which you want to hide the current layout menu.
+   *  Please refer useMediaQuery() hook: https://mui.com/components/use-media-query/,
+   *  to know more about what values can be passed to this hook.
+   *  ! Do not change this value unless you know what you are doing. It can break the template.
+   */
   const hidden = useMediaQuery((theme: Theme) => theme.breakpoints.down('lg'))
 
+  //20231021, 좌측 하단 메뉴 배너
+  // const UpgradeToProImg = () => {
+  //   return (
+  //     <Box sx={{ mx: 'auto' }}>
+  //       <a
+  //         target='_blank'
+  //         rel='noreferrer'
+  //         href='https://themeselection.com/products/materio-mui-react-nextjs-admin-template/'
+  //       >
+  //         <img width={230} alt='upgrade to premium' src={`/images/misc/upgrade-banner-${settings.mode}.png`} />
+  //       </a>
+  //     </Box>
+  //   )
+  // }
+
   return (
-    <VerticalLayout 
+    <VerticalLayout
       hidden={hidden}
       settings={settings}
       saveSettings={saveSettings}
       verticalNavItems={VerticalNavItems()} // Navigation Items
+      // afterVerticalNavMenuContent={UpgradeToProImg} //해당 주석 풀면 Upgrade
       verticalAppBarContent={(
-        props
+        props // AppBar Content
       ) => (
         <VerticalAppBarContent
           hidden={hidden}
@@ -49,7 +71,7 @@ const UserLayout = ({ children }: Props) => {
         />
       )}
     >
-    {children}
+      {children}
     </VerticalLayout>
   )
 }
