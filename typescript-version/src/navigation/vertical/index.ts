@@ -27,30 +27,24 @@ const navigation = (): VerticalNavItemsType => {
       path: '/'
     },
     {
-      title: '핫딜 알림',
-
-      // title: 'Hot Deals Alimi',
+      title: 'NEWS 알림',
       icon: Store,
-      path: '/cards'
+      path: '/cardsns'
+    },
+    {
+      title: '핫딜 알림',
+      icon: Store,
+      path: '/cardshd'
     },
     {
       title: 'LOL 알림',
-
-      // title: 'LOL Alimi',
       icon: Gamepad,
-      path: '/cards'
+      path: '/cardslol'
     },
     {
       title: '로또 알림',
-
-      // title: 'Lottery',
       icon: Cash100,
-      path: '/cards'
-    },
-    {
-      title: 'Icons',
-      path: '/icons',
-      icon: GoogleCirclesExtended
+      path: '/cardsltt'
     },
     {
       sectionTitle: 'subscription'
@@ -58,7 +52,7 @@ const navigation = (): VerticalNavItemsType => {
     {
       title: '내 구독',
       icon: CardMultiple,
-      path: '/cards'
+      path: '/cards/sb'
     },
     {
       sectionTitle: 'BBS'
@@ -66,17 +60,17 @@ const navigation = (): VerticalNavItemsType => {
     {
       title: '자유게시판',
       icon: BulletinBoard,
-      path: '/tables'
+      path: '/tables/free'
     },
     {
       title: '국내핫딜',
       icon: BulletinBoard,
-      path: '/tables'
+      path: '/tables/domestic'
     },
     {
       title: '해외핫딜',
       icon: BulletinBoard,
-      path: '/tables'
+      path: '/tables/inter'
     },
     {
       sectionTitle: 'Account'
@@ -85,13 +79,13 @@ const navigation = (): VerticalNavItemsType => {
       title: 'Login',
       icon: Login,
       path: '/pages/login',
-      openInNewTab: true
+      // openInNewTab: true
     },
     {
       title: 'Logout',
       icon: Logout,
       path: '/pages/login',
-      openInNewTab: true
+      // openInNewTab: true
     },
     {
       title: 'Account',
@@ -102,13 +96,13 @@ const navigation = (): VerticalNavItemsType => {
       title: 'Register',
       icon: AccountPlusOutline,
       path: '/pages/register',
-      openInNewTab: true
+      // openInNewTab: true
     },
     {
       title: 'Error',
       icon: AlertCircleOutline,
       path: '/pages/error',
-      openInNewTab: true
+      // openInNewTab: true
     },
     {
       sectionTitle: 'User Interface'
